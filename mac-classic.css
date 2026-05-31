@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+h1.title {
+  display: none;
+}
+
 /* ── Página ── */
 body {
   background: #ffffff;
