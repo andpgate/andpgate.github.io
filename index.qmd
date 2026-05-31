@@ -1,0 +1,39 @@
+---
+title: ""
+format:
+  html:
+    css: mac-classic.css
+    theme: none
+    toc: false
+---
+::: {#mac-window}
+
+::: {#mac-titlebar}
+[Welcome]{#mac-titlebar-span}
+:::
+
+::: {#mac-content}
+::: {#profile-header}
+
+::: {#profile-photo}
+![](assets/imgs/yo.png)
+:::
+
+::: {#profile-info}
+## Andrea Parra 
+[{{< iconify mdi:github width="20" >}}](https://github.com/andpgate)
+[{{< iconify mdi:email width="20" >}}](mailto:andrea2269119@correo.uis.edu.co)
+[{{< iconify mdi:school width="20" >}}](https://scholar.google.com/citations?hl=es&user=hTslbmcAAAAJ&view_op=list_works)
+
+Computer Science graduate from Universidad Industrial de Santander (UIS), Colombia. Currently pursuing an M.Sc. in Computer Science at the same university and a member of the Hands-on Computer Vision research group. My interests include Natural Language Processing, Deep Learning, and Computer Vision. When I'm not doing research, I'm probably exploring something else.
+
+:::
+:::
+:::
+
+::: {#mac-footer}
+::: {#mac-icon}
+:::
+:::
+
+:::

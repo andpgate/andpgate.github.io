@@ -1,0 +1,9 @@
+project:
+  title: "portfolio"
+
+
+format:
+  html:
+    theme: none
+    toc: false
+    css: mac-classic.css
