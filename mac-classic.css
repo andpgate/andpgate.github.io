@@ -10,26 +10,6 @@ h1.title {
   display: none;
 }
 
-@media (max-width: 600px) {
-
-    
-
-    #profile-photo img {
-        width: 100px;
-        height: auto;
-    }
-
-    #profile-info {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
-    #profile-info h2 {
-        font-size: 18px;
-    }
-
-}
-
 /* ── Página ── */
 body {
   background: #ffffff;
@@ -228,6 +208,24 @@ a {
 }
 a:hover {
   color: rgb(80, 80, 80) !important;
+}
+
+@media (max-width: 600px) {
+
+    #profile-photo img {
+        width: 184px;
+        height: auto;
+    }
+
+    #profile-info {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    #profile-info h2 {
+        font-size: 18px;
+    }
+
 }
 
 /* ── Highlights ── */
