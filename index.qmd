@@ -63,7 +63,7 @@ Computer Science graduate from Universidad Industrial de Santander (UIS), Colomb
 [![](assets/imgs/award_icon.png)](https://somosnlp.org/blog/hackathon-2025){.highlight-icon-link target="_blank"}
 
 [**Tercer mejor Corpus con HoCV-COL**]{.highlight-title}\
-[Hackathon SomosNLP · 2025]{.highlight-meta}
+[*Hackathon SomosNLP* · 2025]{.highlight-meta}
 :::
 
 [OTHERS]{.highlight-section-label}
@@ -72,7 +72,7 @@ Computer Science graduate from Universidad Industrial de Santander (UIS), Colomb
 [![](assets/imgs/people_icon.png)](https://programaorquideas.minciencias.gov.co/directorio/){.highlight-icon-link target="_blank"}
 
 [**Encuentro Nacional Orquídeas: Mujeres en la Ciencia**]{.highlight-title}\
-[ MinCiencias · 2025, 2026]{.highlight-meta}
+[ *MinCiencias* · 2025, 2026]{.highlight-meta}
 :::
 
 :::
