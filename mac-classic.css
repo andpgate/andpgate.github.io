@@ -15,7 +15,18 @@ body {
   background: #ffffff;
   margin: 0;
   padding: 0;
+  cursor: url("assets/cursor/Normal Select.cur"), auto;
   font-family: "Inter", "Geneva", sans-serif;}
+
+a,
+button,
+input,
+textarea,
+select,
+[role="button"] {
+    cursor: url("assets/cursor/Link Select.cur"), auto;
+}
+
 
 /* ── Ocultar chrome de Quarto ── */
 #quarto-header,
@@ -37,7 +48,7 @@ main {
 }
 
 /* ── La ventana Mac ── */
-#mac-window {
+.mac-window {
   border: 2px solid #000;
   max-width: 680px;
     border-radius: 2px;        /* ← añade esto */
@@ -49,13 +60,13 @@ main {
   background: #fff;
 }
 
-#mac-content {
+.mac-content {
   padding: 18px 20px;  /* ya lo tienes, verifica que esté */
   font-size:13px;
 }
 
 /* ── Title bar ── */
-#mac-titlebar {
+.mac-titlebar {
   height: 30px;
   border-bottom: 2px solid #000;
   display: flex;
@@ -75,7 +86,7 @@ main {
 }
 
 /* Título centrado */
-#mac-titlebar span {
+.mac-titlebar span {
   background: #fff;
   padding: 0 10px;
   font-size: 20px;
@@ -88,7 +99,7 @@ main {
 }
 
 /* Cuadrado izquierdo */
-#mac-titlebar::before {
+.mac-titlebar::before {
   content: '';
   position: absolute;
   left: 5px;
@@ -103,13 +114,13 @@ main {
   transform: translateY(-50%);
 }
 
-#mac-footer {
+.mac-footer {
   height: 18px;
   border-top: 2px solid #000;
   position: relative;
 }
 
-#mac-icon {
+.mac-icon {
 position: absolute;
   right: 0;
   top: 0;
@@ -124,8 +135,8 @@ position: absolute;
   justify-content: center;
 }
 
-#mac-icon::before,
-#mac-icon::after {
+.mac-icon::before,
+.mac-icon::after {
   content: "";
   position: absolute;
 
@@ -136,12 +147,12 @@ position: absolute;
   background: #fff;
 }
 
-#mac-icon::before {
+.mac-icon::before {
   left: 6px;
   top: 6px;
 }
 
-#mac-icon::after {
+.mac-icon::after {
   left: 2px;
   top: 2px;
 }
@@ -166,6 +177,9 @@ position: absolute;
   object-fit: cover;
   border-radius: 8px;
   display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  cursor: url("assets/cursor/Link Select.cur"), auto;
 }
 
 /* ocultar caption que genera Quarto con ![](img) */
@@ -194,4 +208,63 @@ a {
 }
 a:hover {
   color: rgb(80, 80, 80) !important;
+}
+
+/* ── Highlights ── */
+.highlight-section-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+  margin: 16px 0 6px;
+}
+.highlight-section-label:first-child { margin-top: 0; }
+
+.highlight-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  /*border-bottom: 1px dotted #999;*/
+  padding: 4px 2px;
+}
+
+.highlight-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  transition: background-color .08s ease;
+}
+.highlight-icon-link img {
+  width: 36px;
+  height: auto;
+  display: block;
+  image-rendering: pixelated;
+  transition: filter .08s ease;
+}
+.highlight-icon-link:hover img,
+.highlight-icon-link:focus-visible img {
+  filter: invert(1);
+  transform: scale(1.05);
+}
+
+.highlight-title { font-size: 13px; font-weight: 600; margin: 0; line-height: 1.25; }
+.highlight-meta { font-size: 11.5px; color: #444; margin: 1px 0 0; line-height: 1.3; }
+.highlight-meta em { font-style: italic; }
+
+/*background*/
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url('assets/imgs/desktop-4.png');
+  background-repeat: repeat;
+  background-size: 32px 32px;
+  image-rendering: pixelated;
+  /*opacity: 0.35; */
 }

@@ -1,26 +1,29 @@
 ---
-title: "Andrea Parra"
+title: "Andrea Juliana Parra Ariza"
+favicon: assets/imgs/happy_mac.png
 format:
   html:
     css: mac-classic.css
     theme: none
     toc: false
+resources:
+  - assets/imgs/yo.png
 ---
-::: {#mac-window}
+::: {.mac-window}
 
-::: {#mac-titlebar}
-[Welcome]{#mac-titlebar-span}
+::: {.mac-titlebar}
+[Welcome]{.mac-titlebar-span}
 :::
 
-::: {#mac-content}
+::: {.mac-content}
 ::: {#profile-header}
 
 ::: {#profile-photo}
-![](assets/imgs/yo.png)
+![](assets/imgs/dithered_2.png)
 :::
 
 ::: {#profile-info}
-## Andrea Parra 
+## Andrea J. Parra A.
 [{{< iconify mdi:github width="20" >}}](https://github.com/andpgate)
 [{{< iconify mdi:email width="20" >}}](mailto:andrea2269119@correo.uis.edu.co)
 [{{< iconify mdi:school width="20" >}}](https://scholar.google.com/citations?hl=es&user=hTslbmcAAAAJ&view_op=list_works)
@@ -31,9 +34,66 @@ Computer Science graduate from Universidad Industrial de Santander (UIS), Colomb
 :::
 :::
 
-::: {#mac-footer}
-::: {#mac-icon}
+::: {.mac-footer}
+::: {.mac-icon}
 :::
 :::
 
 :::
+
+
+::: {.mac-window}
+::: {.mac-titlebar}
+[Highlights]{.mac-titlebar-span}
+:::
+::: {.mac-content}
+
+[PAPERS]{.highlight-section-label}
+
+::: {.highlight-row}
+[![](assets/imgs/doc_icon.png)](https://andpgate.github.io/anon-whisper/){.highlight-icon-link target="_blank"}
+
+[**Preserving Identity in Speech: Anonymized Transcription for the Colombian Context**]{.highlight-title}\
+[*Procesamiento del Lenguaje Natural, Revista nº 76* · 2026]{.highlight-meta}
+:::
+
+[AWARDS]{.highlight-section-label}
+
+::: {.highlight-row}
+[![](assets/imgs/award_icon.png)](https://somosnlp.org/blog/hackathon-2025){.highlight-icon-link target="_blank"}
+
+[**Tercer mejor Corpus con HoCV-COL**]{.highlight-title}\
+[Hackathon SomosNLP · 2025]{.highlight-meta}
+:::
+
+[OTHERS]{.highlight-section-label}
+
+::: {.highlight-row}
+[![](assets/imgs/people_icon.png)](https://programaorquideas.minciencias.gov.co/directorio/){.highlight-icon-link target="_blank"}
+
+[**Encuentro Nacional Orquídeas: Mujeres en la Ciencia**]{.highlight-title}\
+[ MinCiencias · 2025, 2026]{.highlight-meta}
+:::
+
+:::
+::: {.mac-footer}
+::: {.mac-icon}
+:::
+:::
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const img = document.querySelector("#profile-photo img");
+
+    img.addEventListener("click", () => {
+        const current = img.getAttribute("src");
+
+        if (current.includes("dithered_2.png")) {
+            img.src = current.replace("dithered_2.png", "yo.png");
+        } else {
+            img.src = current.replace("yo.png", "dithered_2.png");
+        }
+    });
+});
+</script>

@@ -1,9 +1,13 @@
 project:
   title: "portfolio"
-
+  type: website
 
 format:
   html:
     theme: none
     toc: false
     css: mac-classic.css
+
+website:
+  title: "portfolio"
+  favicon: assets/imgs/happy_mac.png
